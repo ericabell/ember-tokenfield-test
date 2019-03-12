@@ -1,0 +1,18 @@
+my new component
+
+<table>
+<th>
+  <td>Title</td>
+  <td>Owner</td>
+  <td>City</td>
+</th>
+{{#each rentals as |rental|}}
+<tr>
+  <td>{{rental.title}}</td>
+  <td>{{rental.owner}}</td>
+  <td>{{rental.city}}</td>
+</tr>
+{{/each}}
+</table>
+
+{{yield}}
